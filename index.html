@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lightbox</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+  <!-- <ul class="js-list">
+    <li><img src="https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825_1280.jpg" alt=""></li>
+    <li><img src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg" alt=""></li>
+    <li><img src="https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg" alt=""></li>
+    <li><img src="https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg" alt=""></li>
+    <li><img src="https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg" alt=""></li>
+    <li><img src="https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg" alt=""></li>
+    <li><img src="https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg" alt=""></li>
+    <li><img src="https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg" alt=""></li>
+    <li><img src="https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg" alt=""></li>
+  </ul> -->
 
-        <!-- В этот список добавляй элементы галереи -->
-    <ul class="gallery js-gallery"></ul>
 
-    <!--
+<ul class="js-list"></ul>
+
+<div class="box js-backdrop">
+    <button type="button" class="modal-close">x</button>
+    <div class="modal">
+        <img class="modal-img" src="" alt="" />
+    </div>
+</div>
+
+
+
+  <!--
       Модальное окно для полноразмерного изображения
       Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
     -->
-    <div class="lightbox js-lightbox">
+  <!-- <div class="lightbox js-lightbox">
       <div class="lightbox__overlay"></div>
 
       <div class="lightbox__content">
@@ -26,8 +48,16 @@
         type="button"
         class="lightbox__button"
         data-action="close-lightbox"
-      ></button>
-    </div>
-    <script type="module" src="./script.js"></script>
+      ></button> -->
+  <!-- <div class="box">
+        <button type="button" class="modal-close">x</button>
+        <div class="modal"></div>
+    </div>  
+     -->
+
+
+  </div>
+  <script type="module" src="./script.js"></script>
 </body>
+
 </html>
